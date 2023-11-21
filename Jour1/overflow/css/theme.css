@@ -1,0 +1,37 @@
+/*  */
+
+.para1{
+    width: 500px;
+    height: 120px;
+    background: #dd5735;
+    text-align: center;
+}
+
+.p11{
+    overflow: visible;
+}
+
+.p12{
+    overflow: hidden;
+}
+
+.p13{
+    overflow: scroll;
+}
+.p14{
+    overflow: auto;
+}
+
+.para2{
+    width: 240px;
+    background: #dd5735;
+    text-align: center;
+}
+
+.p21{
+    text-overflow: ellipsis;
+}
+
+.p22{
+    text-overflow: clip;
+}
