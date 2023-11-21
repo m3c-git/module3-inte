@@ -1,0 +1,41 @@
+/*  */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    }
+    
+    .bloc-header { 
+        grid-area: 1 / 1 / 2 / 4; 
+        background: #ddd;
+        display: flex;
+
+    }
+
+    .bloc-article-1 { 
+        grid-area: 2 / 1 / 4 / 2; 
+        background: #fff;
+    }
+
+    .bloc-article-2 { 
+        grid-area: 2 / 2 / 3 / 3; 
+        background: #fc3;
+    }
+
+    .bloc-article-3 { 
+        grid-area: 2 / 3 / 3 / 4; 
+        background: #fa3;
+    }
+
+    .bloc-article-4 { 
+        grid-area: 3 / 2 / 4 / 4; 
+        background: #f83;
+    }
+
+    .bloc-footer { grid-area: 4 / 1 / 5 / 4; 
+        background: #bbb;
+    }
