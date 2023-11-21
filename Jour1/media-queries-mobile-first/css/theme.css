@@ -1,0 +1,23 @@
+
+/*Tablette*/
+@media screen and (min-width: 780px) {
+    .container-art{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+}
+
+.article{
+    width: 49%;
+}
+}
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+    .container-art{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+}
+}
