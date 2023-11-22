@@ -36,7 +36,10 @@ i{
     margin: 0.4em;
 }
 
-.fa-book{
+article i{
+    display: flex;
+    align-content: baseline;
+    padding: 1em 0.7em;
     background: #CB8606;
 }
 
@@ -110,12 +113,24 @@ Media queries
         width: 50%;
     }
     
+    .h2{
+        padding-top: 1em;
+    }
     .container-section{
         flex-direction: row;
     }
 
+    .container-section{
+        align-items: start;
+    }
+
     article{
-        width: 23%;
+        width: 25%;
+    }
+
+    article p{
+        height: 10.125em;
+
     }
 
     .card{
@@ -124,6 +139,7 @@ Media queries
 
     .cards{
         width: 25%;
+        text-align: center;
     }
 
 }
