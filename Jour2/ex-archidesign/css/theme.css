@@ -1,1 +1,6 @@
 /* Le code CSS de la démo */
+
+menu{
+    display: flex;
+    justify-content: space-around;    
+}

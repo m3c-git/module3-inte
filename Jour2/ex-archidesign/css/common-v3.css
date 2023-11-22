@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+	font-size: 1.8rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
 }
 
 /* *****************************************************************
@@ -32,7 +32,7 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;	
 	color: #414141;
 	background-color: #f9f9f9;
 }
@@ -40,19 +40,46 @@ body {
 /* Le titre principal d'un flux */
 h1 {
 	font-size: 4rem;
-	color: #DD5735;
+	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 /* Le titre de second niveau  */
 h2 {
 	font-size: 3.2rem;
-	color: #333;
+	color: #00748D;
+	font-family: 'Fjalla One', sans-serif;
 }
 
+.header-main{
+	background-image: url(../images/bg-header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 37.5em;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-main h2{
+	color: #fff;
+	background: #CB8606;
+	padding: 0.3em;
+}
+
+.header-main p{
+	color: #00748D;
+	background: #fff;
+	padding: 0.3em;
+
+}
 
 /* Le titre de troisème niveau */
 h3 {
 	font-size: 2.4rem;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 /* Les liens */
@@ -63,18 +90,28 @@ a {
 
 /* Ajout d'un élément de décoration au survol */
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: #000;
 }
 
+.nav-link{
+ color: #fff;
+ text-decoration: none;
+}
+
+/* Les listes */
+li{
+	list-style: none;
+}
+
+
 /* Contenu principal */
 main {
-	padding: 2em;
+
 }
 
 /* Les articles */
 article {
-	background-color: #fff;
 	padding: 1em;
 }
 
@@ -105,13 +142,16 @@ MAIN LAYOUT
 	padding: 1em;
 	text-align: center;
 	color: #999;
-	background-color: #444;
+	background-color: #00748D;
 }
+
+
 
 /* Pas de marge pour le titre pricipal */
 .header h1 {
 	margin: 0;
 }
+
 
 /* Le pied de page */
 .footer {
@@ -220,9 +260,7 @@ textarea {
 	padding: 1em 2em;
 	font-size: 1.6rem;
 	color: #fff;
-	background-color: #DD5735;
-	border: 2px solid #DD5735;
-	border-radius: 0.5em;
+	background-color: #00748D;
 	cursor: pointer;
 }
 
