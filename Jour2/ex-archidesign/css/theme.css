@@ -2,5 +2,128 @@
 
 menu{
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
+    font-size: 2rem;
+
+}
+
+.container-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.cards{
+    display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.reseau{
+    margin-bottom: 0.2em ;
+}
+
+i{
+    margin: 0.4em;
+}
+
+.fa-book{
+    background: #CB8606;
+}
+
+/***************************************************************
+Media queries
+****************************************************************/
+
+@media screen and (min-width: 990px){
+    .container-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article{
+        width: 49%;
+    }
+
+    .card{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: 49%;
+    }
+
+    .footer-main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1.5em;
+
+    }
+
+    .logo-footer{
+        display: flex;
+        align-items: baseline;
+        width: 49%;
+    }
+
+    .logo-footer p{
+        margin-left: 0.5em;
+        display: flex;
+        align-items: end;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    .logo-header{
+        display: flex;
+        align-items: baseline;
+        width: 49%;
+    }
+
+    .logo-header h1{
+        margin-left: 0.5em;
+        display: flex;
+        align-items: end;
+        padding: 0;
+    }
+
+    nav{
+        width: 50%;
+    }
+    
+    .container-section{
+        flex-direction: row;
+    }
+
+    article{
+        width: 23%;
+    }
+
+    .card{
+        flex-direction: row;
+    }
+
+    .cards{
+        width: 25%;
+    }
+
 }

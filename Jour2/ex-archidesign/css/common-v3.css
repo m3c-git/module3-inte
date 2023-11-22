@@ -32,30 +32,34 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	font-family: 'Nunito', sans-serif;	
+	font-family: 'Nunito', sans-serif;
+	font-weight: normal;
 	color: #414141;
 	background-color: #f9f9f9;
 }
 
 /* Le titre principal d'un flux */
 h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	color: #fff;
 	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
 }
 
 /* Le titre de second niveau  */
 h2 {
-	font-size: 3.2rem;
+	font-size: 3rem;
 	color: #00748D;
 	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	text-align: center;
 }
 
 .header-main{
 	background-image: url(../images/bg-header.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size:cover;
 	height: 37.5em;
 	display: flex;	
 	flex-direction: column;
@@ -67,19 +71,28 @@ h2 {
 	color: #fff;
 	background: #CB8606;
 	padding: 0.3em;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	font-size: 3rem;
+
 }
 
-.header-main p{
+.header-main h3{
 	color: #00748D;
 	background: #fff;
-	padding: 0.3em;
+	padding: 0.4em;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	font-size: 2rem;
+	margin: 0;
 
 }
 
 /* Le titre de troisème niveau */
 h3 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
 }
 
 /* Les liens */
@@ -97,6 +110,14 @@ a:hover {
 .nav-link{
  color: #fff;
  text-decoration: none;
+ font-family: 'Fjalla One', sans-serif;
+ padding: 0.5em;
+}
+
+.nav-link:hover{
+	color: #00748D;
+	background: #fff;
+	
 }
 
 /* Les listes */
@@ -106,13 +127,10 @@ li{
 
 
 /* Contenu principal */
-main {
-
-}
 
 /* Les articles */
 article {
-	padding: 1em;
+	padding: 1.1em;
 }
 
 /* marge entre les sections */
@@ -133,6 +151,11 @@ CONTAINER
 
 }
 
+.container-header{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /* *****************************************************************
 MAIN LAYOUT
 ***************************************************************** */
@@ -141,8 +164,10 @@ MAIN LAYOUT
 .header {
 	padding: 1em;
 	text-align: center;
-	color: #999;
 	background-color: #00748D;
+	background-image: url(../images/path.png);
+	background-position:bottom;
+	background-repeat: repeat-x;
 }
 
 
@@ -161,15 +186,38 @@ MAIN LAYOUT
 	background-color: #444;
 }
 
+.footer-main{
+	background-color: #00748D;
+	background-image: url(../images/path.png);
+	background-position:bottom;
+	background-repeat: repeat-x;
+	padding: 1em;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.footer-main p{
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	padding: 0;
+}
+
 /* *****************************************************************
 CARDS
 ***************************************************************** */
 
-.card,
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+
+}
+
 .cards > * {
-	padding: 2em;
+	margin: 1em;
 	background-color: #fff;
-	border: 1px solid rgba(0,0,0,0.2);
+	border: 2px solid #00748D;
 }
 
 .gutter > * {
@@ -188,72 +236,6 @@ FORM
 	border-radius: 0.5em;
 }
 
-/* Style de chaque groupe de champs (fieldset) */
-fieldset {
-	margin: 2em 0;
-	padding: 1em;
-	font-size: 1.6rem;
-	border: 1px solid rgba(0,0,0,0.2);
-	border-radius: 0.5em;
-}
-
-legend {
-	padding: 0 1em;
-	font-size: 1.8rem;
-}
-
-/* Style de chaque champ (field) */
-.field {
-	display: flex;
-	padding: 1em 0;
-}
-
-.field label {
-	width: 30%;
-}
-
-.field .value {
-	width: 70%;
-}
-
-.field input {
-	width: 100%;
-}
-
-.field + .field {
-	border-top: 1px solid rgba(0,0,0,0.2);
-}
-
-/* Style de chaque libélé */
-label {
-	padding: 0.5em;
-}
-
-/* Style de chaque input */
-input[type="text"],
-input[type="password"],
-input[type="search"],
-input[type="email"],
-input[type*="date"],
-select,
-textarea {
-	display: inline-block;
-	padding: 0.5em 1em;
-	font-size: 1.6rem;
-	color: #333;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	border-radius: 0.5em;
-}
-select,
-textarea {
-	width: 100%;
-}
-textarea {
-	display: block;
-	min-height: 10em;
-}
-
 /* Style de chaque bouton */
 .button {
 	display: inline-block;
@@ -262,36 +244,13 @@ textarea {
 	color: #fff;
 	background-color: #00748D;
 	cursor: pointer;
+	width: 78%;
 }
 
 .button:hover {
 	text-decoration: none;
-	color: #DD5735;
-	background-color: #fff;
-}
-
-/* *****************************************************************
-TABLE
-***************************************************************** */
-
-.table {
-	width: 100%;
-	border-collapse: collapse;
-}
-.table caption,
-.table th,
-.table td {
-	padding: 1em;
-	border: 1px solid #ddd;
-}
-.table thead {
-	border-bottom: 2px solid #999;
-}
-.table tfoot {
-	border-top: 2px solid #999;
-}
-.table tbody tr:nth-child(odd) {
-    background-color: rgba(0,0,0,0.1);
+	color: #00748D;
+	background: #fff;
 }
 
 /* *****************************************************************

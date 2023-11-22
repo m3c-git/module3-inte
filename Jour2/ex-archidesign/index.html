@@ -11,60 +11,62 @@
 	<link rel="stylesheet" href="css/common-v3.css">
 	<link rel="stylesheet" href="css/theme.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 	<header class="header">
-		<div>
+		<div class="container-header">
+			<div class="logo-header">
 			<img src="./images/logo.png" alt="logo">
 			<h1 class="titre-site">Intérieurs à la carte</h1>
+			</div>
+			<nav>
+				<menu>
+					<li><a class="nav-link" href="#">Accueil</a></li>
+					<li><a class="nav-link" href="#">A propos</a></li>
+					<li><a class="nav-link" href="#">Réalisation</a></li>
+					<li><a class="nav-link" href="#">Actualité</a></li>
+				</menu>
+			</nav>
 		</div>
-		<nav>
-			<menu>
-				<li><a class="nav-link" href="#">Accueil</a></li>
-				<li><a class="nav-link" href="#">A propos</a></li>
-				<li><a class="nav-link" href="#">Réalisation</a></li>
-				<li><a class="nav-link" href="#">Actualité</a></li>
-			</menu>
-		</nav>
-		<img src="./images/path.png" alt="path">
+		
 	</header>
 
 	<main>
 		<div class="container">
 			<header class="header-main">
 				<h2>Conception et réalisation</h2>
-				<p>Notre métier : imaginer et réaliser votre intérieur</p>
+				<h3>Notre métier : imaginer et réaliser votre intérieur</h3>
 			</header>
 			<section>
-				<h2>Nos prestations</h2>
+				<h2>Nos prestataires</h2>
 				<div class="container-section">
 					<article>
-						<img src="./images/" alt="">
+						<i class="fa-regular fa-check"></i>
 						<h3>Cahier des charges</h3>
 						<p>Notre cahier des charges détaillé vous permettra de contrôler chaque étape de nos interventions : de l'élaboration des plans à leur mise en oeuvre.</p>
 						<button class="button">En savoir plus</button>
 					</article>
 					<article>
-						<img src="" alt="">
+						<i class="fa-regular fa-check"></i>
 						<h3>Shopping personnalisé</h3>
 						<p>Nous aimons créer des espaces innovateurs répondants aux besoins et aux attentes de notre clientèle. Nous restons à l’écoute de vos besoins et de votre budget.</p>
 						<button class="button">En savoir plus</button>
 					</article>
 					<article>
-						<img src="" alt="">
+						<i class="fa-regular fa-check"></i>
 						<h3>Suivi de chantier</h3>
 						<p>Nous assurons un suivi auprès des prestataires afin de nous assurer du respect du cahier des charges, de l'utilisation de matériaux de qualité et des délais.</p>
 						<button class="button">En savoir plus</button>
 					</article>
 					<article>
-						<img src="" alt="">
+						<i class="fa-regular fa-check"></i>
 						<h3>Clé en main</h3>
 						<p>Notre réputation repose sur notre engagement à travailler étroitement avec notre clientèle pour livrer un projet à l’image et aux attentes de chacun.</p>
 						<button class="button">En savoir plus</button>
@@ -74,23 +76,22 @@
 
 			<section>
 				<h2>Nos prestations</h2>
-				<div>
-					<div><img src="./images/partner1.png" alt="partner1"></div>
-					<div><img src="./images/partner2.png" alt="partner2"></div>
-					<div><img src="./images/partner3.png" alt="partner3"></div>
-					<div><img src="./images/partner4.png" alt="partner4"></div>
+				<div class="card">
+					<div class="cards"><img src="./images/partner1.png" alt="partner1"></div>
+					<div class="cards"><img src="./images/partner2.png" alt="partner2"></div>
+					<div class="cards"><img src="./images/partner3.png" alt="partner3"></div>
+					<div class="cards"><img src="./images/partner4.png" alt="partner4"></div>
 				</div>
 			</section>
 		</div>
 
 		
 		<footer class="footer-main">
-			<p><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i><i class="fa-brands fa-instagram" style="color: #ffffff;"></i><i class="fa-brands fa-youtube" style="color: #ffffff;"></i><i class="fa-solid fa-rss" style="color: #ffffff;"></i></p>
-			<div>
+			<p class="reseau"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i><i class="fa-brands fa-instagram" style="color: #ffffff;"></i><i class="fa-brands fa-youtube" style="color: #ffffff;"></i><i class="fa-solid fa-rss" style="color: #ffffff;"></i></p>
+			<div class="logo-footer">
 				<img src="./images/logo.png" alt="logo">
-				<p>Le template des démos du module 3 (feuille de style commune en version 3)</p>
+				<p>Intérieurs à la carte</p>
 			</div>
-			<img src="./images/path.png" alt="path">
 		</footer>
 	</main>
 
